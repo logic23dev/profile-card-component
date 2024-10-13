@@ -4,8 +4,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Click here!]()
-- Live Site URL: [Click here!]()
+- Solution URL: [Click here!](https://github.com/logic23dev/profile-card-component)
+- Live Site URL: [Click here!](https://logic23dev.github.io/profile-card-component/)
 
 ### Built with
 
