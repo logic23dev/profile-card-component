@@ -27,8 +27,120 @@ svg {
   display: block;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 body {
   min-height: 100vh;
-  font-size: 18px;
+  font-family: var(--ff-kumbh-sans);
+  font-size: 1.125rem;
+  font-weight: var(--fw-400);
   line-height: 1.5;
+  color: var(--clr-very-dark-desaturated-blue);
+  background: url(../images/bg-pattern-top.svg) no-repeat,
+    var(--clr-dark-cyan) url(../images/bg-pattern-bottom.svg) no-repeat;
+  background-position: top -38.75rem left -43.75rem, bottom -35rem right -45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 20.3125rem;
+  background-color: white;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+  box-shadow: 0px 7px 50px -19px hsl(229, 23%, 23%);
+}
+
+.card-pattern {
+  object-fit: cover;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 0.375rem solid white;
+  width: 6.75rem;
+  margin-top: -3.375rem;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.25rem;
+}
+
+.name h2 {
+  font-size: 1.0625rem;
+}
+
+.name p {
+  font-weight: var(--fw-400);
+  color: var(--clr-dark-grayish-blue);
+}
+
+.location {
+  font-size: 0.875rem;
+  color: var(--clr-dark-grayish-blue);
+  margin-bottom: 1.25rem;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: hsl(0, 0%, 92%);
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5625rem;
+}
+
+.statistics p {
+  font-size: 1.125rem;
+  font-weight: var(--fw-700);
+}
+
+.statistics h3 {
+  font-size: 0.625rem;
+  font-weight: var(--fw-400);
+  color: var(--clr-dark-grayish-blue);
+  letter-spacing: 0.105rem;
+}
+
+.statistics div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 48rem) {
+  .card {
+    max-width: 21.875rem;
+  }
+
+  body {
+    background-position: top -23.125rem left -18.125rem,
+      bottom -31.25rem right -15rem;
+  }
 }
