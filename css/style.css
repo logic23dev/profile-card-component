@@ -46,9 +46,12 @@ body {
   font-weight: var(--fw-400);
   line-height: 1.5;
   color: var(--clr-very-dark-desaturated-blue);
-  background: url(../images/bg-pattern-top.svg) no-repeat,
-    var(--clr-dark-cyan) url(../images/bg-pattern-bottom.svg) no-repeat;
-  background-position: top -38.75rem left -43.75rem, bottom -35rem right -45rem;
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-color: var(--clr-dark-cyan);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -200px left -200px, bottom -200px right -300px;
+  background-size: 400px, 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,7 +143,7 @@ hr {
   }
 
   body {
-    background-position: top -23.125rem left -18.125rem,
-      bottom -31.25rem right -15rem;
+    background-position: top -490px left -300px, bottom -620px right -240px;
+    background-size: auto, auto;
   }
 }
