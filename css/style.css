@@ -50,8 +50,9 @@ body {
     url(../images/bg-pattern-bottom.svg);
   background-color: var(--clr-dark-cyan);
   background-repeat: no-repeat, no-repeat;
-  background-position: top -200px left -200px, bottom -200px right -300px;
-  background-size: 400px, 500px;
+  background-position: top -12.5rem left -12.5rem,
+    bottom -12.5rem right -18.75rem;
+  background-size: 25rem, 31.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,7 +144,8 @@ hr {
   }
 
   body {
-    background-position: top -490px left -300px, bottom -620px right -240px;
+    background-position: top -30.625rem left -18.75rem,
+      bottom -38.75rem right -15rem;
     background-size: auto, auto;
   }
 }
